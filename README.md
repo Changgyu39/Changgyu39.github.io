@@ -1,5 +1,5 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Gwak changgyu
+**my homework files.**
 
 [**homework2-1**](http://Changgyu39.github.io/homework2-1.html.html)<br>
 [**homework2-2**](http://Changgyu39.github.io/homework2-2.html)<br>
