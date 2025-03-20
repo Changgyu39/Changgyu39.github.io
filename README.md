@@ -1,8 +1,7 @@
 # Academic Pages
 **Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
-
+[**homework2-1**](http://Changgyu39.github.io/homework2-1.html.html)<br>
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
