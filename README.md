@@ -1,5 +1,5 @@
 # Gwak changgyu
-**my homework files.**
+**my homework**
 
 [**homework2-1**](http://Changgyu39.github.io/homework2-1.html.html)<br>
 [**homework2-2**](http://Changgyu39.github.io/homework2-2.html)<br>
