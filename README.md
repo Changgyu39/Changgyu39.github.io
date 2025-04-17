@@ -9,6 +9,6 @@
 
 [**homework3-1**](http://Changgyu39.github.io/homework3-1.png)<br>
 [**homework3-2**](http://Changgyu39.github.io/homework3-2.png)<br>
-
+[**homework3-3**](http://Changgyu39.github.io/homework3-3.png)<br>
 
 [**homework3-5**](http://Changgyu39.github.io/homework3-5.jpg)<br>
