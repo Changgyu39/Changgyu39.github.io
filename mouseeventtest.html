@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draw Rectangle with Mouse</title>
+    <script type="text/javascript">
+        var canvas, context;
+        var startX, startY;
+        var currentX, currentY;
+        var mouseIsDown = false;
+
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            context = canvas.getContext("2d");
+            canvas.addEventListener("mousedown", mouseDown, false);
+            canvas.addEventListener("mousemove", mouseMove, false);
+            canvas.addEventListener("mouseup", mouseUp, false);
+        }
+
+        function mouseDown(e) {
+            mouseIsDown = true;
+            startX = e.pageX - canvas.offsetLeft;
+            startY = e.pageY - canvas.offsetTop;
+        }
+
+        function mouseMove(e) {
+            if (!mouseIsDown) return;
+
+            currentX = e.pageX - canvas.offsetLeft;
+            currentY = e.pageY - canvas.offsetTop;
+            draw();
+        }
+
+        function mouseUp(e) {
+            mouseIsDown = false;
+            currentX = e.pageX - canvas.offsetLeft;
+            currentY = e.pageY - canvas.offsetTop;
+            draw();  // final draw on release
+        }
+
+        function draw() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw rectangle
+            var width = currentX - startX;
+            var height = currentY - startY;
+            context.strokeStyle = "blue";
+            context.lineWidth = 2;
+            context.strokeRect(startX, startY, width, height);
+
+            // Draw coordinates text
+            context.font = "16pt Arial";
+            context.textAlign = "center";
+            context.textBaseline = "middle";
+            context.fillStyle = "black";
+            var text = `(${startX}, ${startY})-(${currentX}, ${currentY}) down`;
+            context.fillText(text, canvas.width / 2, canvas.height / 2);
+        }
+    </script>
+</head>
+<body onload="init()">
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
+</body>
+</html>
